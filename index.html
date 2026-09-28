@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuva — yaşam alanınız için özenle seçilmiş tasarım ürünleri. Yerel e-ticaret denemesi.">
+  <title>Yuva — Günlük yaşama güzel dokunuşlar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Küçük dokunuşlar, güzel yaşam alanları. <span>1.500 TL üzeri deneme siparişlerinde ücretsiz kargo</span></div>
+  <header class="header wrap">
+    <a class="logo" href="index.html" aria-label="Yuva ana sayfa">yuva<span>®</span></a>
+    <nav aria-label="Ana menü"><a href="#koleksiyon">Koleksiyon</a><a href="#hakkimizda">Hikâyemiz</a></nav>
+    <button class="cart-button" id="open-cart">Sepetim <span id="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow">DAHA SADE. DAHA SEN.</p><h1>Evinin en güzel<br>hâli, <em>senin hâlin.</em></h1><p>Doğal dokular, zamansız formlar ve her gününe eşlik edecek küçük mutluluklar. Yaşam alanın için özenle seçtik.</p><a class="button dark" href="#koleksiyon">Koleksiyonu keşfet <span>↗</span></a><div class="hero-note"><span class="little-line"></span> Az eşya, çok anlam.</div></div>
+      <div class="hero-art" aria-label="Dekoratif seramik vazo ve bitki illüstrasyonu" role="img"><span class="art-label">THE EVERYDAY COLLECTION<br>2026 — VOL. 01</span><div class="sun"></div><div class="stem stem-one"></div><div class="stem stem-two"></div><div class="stem stem-three"></div><div class="vase"></div><div class="pedestal"></div><div class="art-caption">Doğadan ilhamla.<span>Yuva seçkisi ↗</span></div></div>
+    </section>
+    <div class="benefits wrap"><span>✳ Özenle seçilmiş ürünler</span><span>↗ Zamansız tasarımlar</span><span>♡ Her köşede bir hikâye</span></div>
+    <section class="catalog wrap" id="koleksiyon">
+      <div class="section-heading"><div><p class="eyebrow">SENİN İÇİN SEÇTİK</p><h2>Gündelik olanı güzelleştir.</h2></div><span id="product-count"></span></div>
+      <div class="toolbar"><div class="filters" role="group" aria-label="Ürün kategorileri"><button class="active" data-category="Tümü" aria-pressed="true">Tümü</button><button data-category="Dekorasyon" aria-pressed="false">Dekorasyon</button><button data-category="Aydınlatma" aria-pressed="false">Aydınlatma</button><button data-category="Tekstil" aria-pressed="false">Tekstil</button><button data-category="Mutfak" aria-pressed="false">Mutfak</button></div><div class="search-sort"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Bir şeyler ara…" aria-label="Ürün ara"></label><select id="sort" aria-label="Ürünleri sırala"><option value="featured">Önerilen sıralama</option><option value="price-asc">Fiyat: düşükten yükseğe</option><option value="price-desc">Fiyat: yüksekten düşüğe</option></select></div></div>
+      <div class="product-grid" id="products"></div>
+      <p class="empty hidden" id="no-results">Aramana uygun ürün bulunamadı. Başka bir kelime veya kategori deneyebilirsin.</p>
+    </section>
+    <section class="story wrap" id="hakkimizda"><p class="eyebrow">YUVA'NIN HİKÂYESİ</p><h2>Bir evden daha fazlası.</h2><p>Bazen bir fincan, bazen bir ışık, bazen de en sevdiğin köşeye bıraktığın bir vazo. Yuva, günlük hayatın içindeki bu küçük güzellikleri bir araya getiren örnek bir tasarım mağazası.</p><span>İyi hissettiren şeylere yer aç.</span></section>
+  </main>
+  <footer class="wrap"><a class="logo" href="index.html">yuva<span>®</span></a><p>Yerel deneme projesi · Gerçek satış ve ödeme yapılmaz.</p><span>HTML · CSS · JavaScript</span></footer>
+  <dialog id="cart-dialog" class="cart-dialog"><div class="dialog-heading"><h2>Sepetim</h2><button class="icon-button" data-close="cart-dialog" aria-label="Sepeti kapat">✕</button></div><div id="cart-items"></div><div id="cart-summary"></div></dialog>
+  <div id="toast" role="status" class="toast"></div>
+</body>
+</html>
